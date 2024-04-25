@@ -10,12 +10,18 @@ body{
   background-size:cover ;
   background-repeat: no-repeat;
 }
+.img{
+  height: 70px;
+  width: 78px;
+}
 .nav {
-  height: 80px;
+  height: 90px;
   width: 100%;
-  background-color: rgba(250, 250, 250, 0.15);
+  background-color: black;
   position: relative;
   padding: 20px;
+  color: white;
+  cursor: pointer;
 }
 
 .nav > .nav-header {
@@ -26,7 +32,7 @@ body{
   display: inline-block;
   font-size: 22px;
   color: #fff;
-  padding: 10px 10px 10px 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 .nav > .nav-btn {
@@ -47,14 +53,14 @@ body{
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+ color: crimson;
 }
 
 .nav > #nav-check {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:800px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
