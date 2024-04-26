@@ -5,11 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/loding.css">
+    <script src="js/gsap.js" defer></script>
+
     <title>Next Level</title>
 </head>
 
-<body>
+<body id="particles-js">
+
+    <div class="loading-divv" id="loadingdivv">
+        <div class="loading-barr"></div>
+        <div class="svg-div"></div>
+        <div class="loading-count">
+            <h1 class="countss" id="countss"> </h1>
+        </div>
+    </div>
     <div class="nav">
+        <div class="loading-bar"></div>
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
             <div class="nav-title">
@@ -33,9 +47,37 @@
             <a>ABOUT US</a>
         </div>
     </div>
-    <div>
-
+    <!-- navbar ends here -->
+    <!-- section1 starts here -->
+    <div class="section1">
+        <h1>Next Level Gym</h1>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+        let anim = true;
+        if (anim) {
+
+            let html = document.getElementById("html")
+            let loadingDivv = document.getElementById("loadingdivv");
+            let count = document.querySelector(".countss");
+            let i = 0;
+            window.scrollTo(0, 0)
+            let countInt = setInterval(() => {
+                count.innerText = `${i}`;
+                i < 100 ? i++ : clearInterval(countInt);
+            }, 5);
+            setTimeout(() => {
+                count.innerText = `NEXT LEVEL FITNESS`;
+                count.style.color = "#8cefe9";
+            }, 1000);
+            setTimeout(() => {
+                loadingDivv.style.display = "none";
+                html.style.overflowY = "scroll"
+            }, 4000);
+            anim = false;
+        }
+    </script>
+    <script src="js/gsap.js" defer></script>
 </body>
 
 </html>
