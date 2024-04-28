@@ -15,7 +15,7 @@ function counter(el, limit) {
     }, 16)
 }
 
-// var checkCounter = true;
+var checkCounter = true;
 
 // gsap.registerPlugin(ScrollTrigger);
 // gsap.from(".about", {
@@ -53,9 +53,8 @@ showScrollTop = () => {
     if (currentScrollPosition > elementOffsetTop - 300) {
         counterdiv()
     } else {
-     document.getElementById('campusAmb').style.color = "white";
+    //  document.getElementById('campusAmb').style.color = "white";
     }
   }
 
-window.addEventListener('scroll', showScrollTop)
-  
+  window.addEventListener('scroll', showScrollTop)

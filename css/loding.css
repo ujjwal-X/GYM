@@ -6,7 +6,7 @@
 }
 
 html {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .loading-barr {
