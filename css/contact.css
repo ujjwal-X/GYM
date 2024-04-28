@@ -1,0 +1,463 @@
+/* --CSS for nav bar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .img{
+    height: 70px;
+    width: 78px;
+  }
+  .nav {
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 0px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+   color: crimson;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:815px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 40px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(50vh - 50px);
+      overflow-y: auto;
+      line-height: 2;
+      margin-top: 40px;
+    }
+  }
+
+
+  /* CSS for body */
+  
+
+.container2::before{
+    content: "";
+    position: absolute;
+    background: url('../image/Gym-Wallpaper-For-Desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover ;  */
+   height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.55;
+ }
+
+.container1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(8, 10, 40);;
+}
+.heading{
+display: flex;
+align-items: center;
+font-size: 25px;
+font-weight: bolder;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+justify-content: center;
+align-items: center;
+}
+.heading1
+{
+    font-size: 25px;
+}
+.container2
+{
+    /* margin-left: 140px; */
+    display: flex;
+    /* margin-top: 45px; */
+    /* border: 2px solid red; */
+    height: 1000px ;
+    width: 100%;
+    justify-content: center;
+    /* border: 2px solid black; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container2-1
+{
+    margin-left: 65px;
+    height: 100%;
+    width: 45%;
+    /* border: 2px solid red; */
+    text-wrap: wrap;
+    /* font-size: large ; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.get
+{
+    display: flex;
+    padding-top: 75px;
+    font-weight: bolder;
+    font-size: 35px;
+    color: black;
+    font-weight: bolder;
+}
+.india
+{
+    display: flex;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+
+}
+.australia
+{
+    display: flex;
+    font-size: larger;
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+
+}
+.visit
+{
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+}
+
+.office-india
+{
+    padding-top: 8px;
+    padding-left: 15px;
+    display: flex;
+    color: black;
+    font-size: 20px;
+    
+}
+.mail
+{
+    padding-left: 15px;
+    font-weight: bolder; 
+     font-size: 22px;
+     color: black;    
+    
+}
+.mail-india
+{
+    display: flex;
+    padding-top: 8px;
+    padding-left: 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+.phone{
+    padding-left: 15px;
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+}
+.phone-india
+{
+    display: flex;
+    padding-left: 15px;
+    padding-top: 8px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+.visit-australia
+{
+    padding-left: 15px;
+    /* padding-left: 15px; */
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+    
+}
+.office-australia
+{
+    padding-left: 15px;
+    display: flex;
+    padding-top: 8px;
+    color: black;
+     font-weight: bolder;
+    font-size: 22px;
+    
+}
+.phone-australia
+{
+    padding-left: 15px;
+    padding-left: 15px;
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+    
+}
+.number-australia{
+    padding-left: 15px;
+display: flex;
+padding-top: 8px;
+color: black;
+font-weight: bolder;
+    font-size: 20px;
+}
+.container2-2
+{
+    /* justify-content: center; */
+    padding-top: 50px;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    height: 90%;
+    width: 65%;
+    /* border: 2px solid red; */
+    /* font-size: xx-large; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    /* font-size: medium; */
+}
+.drop
+{
+    display: flex;
+    padding-top: 125px;
+    padding-left: 15px;
+    font-weight: bolder;
+    font-size: 35px;
+    color: black;
+}
+
+.name2-2
+{
+    margin-top: 35px;
+    /* padding-top: 5px; */
+    height: 70px;
+    width: 45%;
+    /* margin-left: 45px; */
+    /* align-items: center; */
+    padding-left: 5px;
+    /* background: none; */
+    /* background-color: rgb(232, 228, 221); */
+    background-color: white;
+    /* background-color: ; */
+   border: none;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+#text
+{
+    border: none;
+    height: 150px;
+    width:45% ;
+    margin-top: 35px;
+    display: flex;
+    /* margin-left: 45px; */
+    padding-left: 5px;
+    background-color: white;
+    /* background-color: rgb(243, 234, 218); */
+    font-size: 15px;
+    border-radius: 15px;
+}
+.btn1
+{
+    height: 55px;
+    width: 270px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    background-color: royalblue;
+    color: white;
+    /* background-color: rgb(243, 234, 218); */
+    /* margin-left: 45px; */
+    margin-top: 35px;
+    border: none;
+    border-radius: 5px;
+    transition: ease-out 0.6s;
+
+}
+.btn1:hover
+{
+    cursor: pointer;
+    background-color: rgb(44, 68, 140); 
+     border-radius: 25px; 
+     width: 290px;
+    height: 55px; 
+    
+     transition: all 0.5s ease-in ; 
+     color: rgb(0, 255, 26);
+  
+ }
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .container1{
+        width: 100%;
+    }
+    .container2::before{
+        height: 2000px;
+        width: 100%;
+    }
+    .container2{
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .container2-1{
+        
+        margin-left: 0px;
+        word-wrap:break-word;
+    
+    }
+    .container2-2{
+        
+        padding-left: 0px;
+        justify-content: left;
+        width: fit-content;
+    }
+    .drop{
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 120px;
+    }
+    
+}
+
+@media screen and (max-width:440px) {
+    .drop{
+        margin-right: 10px;
+    }
+    .btn1{
+        height: 30px;
+        width: 170px;
+    }
+    .phone-india{
+        overflow-wrap: anywhere;
+        
+    }
+    .mail-india{
+        overflow-wrap: anywhere;
+        
+    }
+    .number-australia{
+        overflow-wrap: anywhere;
+        
+    }
+}
+
+
+@media screen and (max-width:370px) {
+    .container2::before{
+        height: 2200px;
+        width: 100%;
+    }
+    .container2{
+        height: 2200px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .drop {
+        margin-left: 74px;
+    }
+    .container2::before{
+        height: 2500px;
+        width: 100%;
+    }
+    .container2{
+        height: 2500px;
+    }
+    .btn1{
+        height: 30px;
+        width: 170px;
+    }
+   
+}

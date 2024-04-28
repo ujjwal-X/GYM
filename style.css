@@ -232,17 +232,18 @@ background-size: cover;
 }
 
 .primary {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 700;
 }
 
 .secondary {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 400;
 }
 
 .tertiary {
-  font-size: 15px;
+  font-size: 25px;
+  font-weight: 200;
 }
 /* End Base */
 
@@ -444,7 +445,7 @@ background-size: cover;
   }
 
   .trainer {
-    margin-bottom: 20px;
+    margin: 100px;
   }
 
   .client {
@@ -488,3 +489,124 @@ background-size: cover;
 }
 
 /* End Responsive */
+
+/* footer */
+ /* Styles for the footer menu */
+ /* Footer styles */
+    footer {
+      background-image: url("./image/footer-bg.jpg");
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-content {
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer-content h3 {
+      font-size: 1.8rem;
+      /* Adjusted font size for smaller screens */
+    }
+
+    .footer-content p {
+      max-width: 90%;
+      /* Adjusted max width for smaller screens */
+      margin: 10px auto;
+      font-size: 14px;
+      color: #cacdd2;
+    }
+
+    .socials {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+    .socials li {
+      margin: 0 10px;
+    }
+
+    .socials a i {
+      font-size: 1.1rem;
+      width: 20px;
+      transition: color .4s ease;
+    }
+    .footer-bottom {
+      background: #000;
+      padding: 10px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+    }
+
+    .footer-bottom p a {
+      color: #44bae8;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .footer-bottom span {
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+    }
+
+    .footer-menu {
+      margin-top: 20px;
+      /* Adjusted margin for smaller screens */
+    }
+
+    .footer-menu ul {
+      display: flex;
+      justify-content: center;
+      /* Center align the menu */
+    }
+
+    .footer-menu ul li {
+      padding: 0 10px;
+      /* Adjusted padding */
+    }
+
+    .footer-menu ul li a {
+      color: #cfd2d6;
+      text-decoration: none;
+    }
+
+    .footer-menu ul li a:hover {
+      color: #27bcda;
+    }
+
+    @media (max-width: 500px) {
+      .footer-content h3 {
+        font-size: 1.5rem;
+        /* Further adjusted font size for smaller screens */
+      }
+
+      .footer-menu ul {
+        margin-top: 10px;
+        /* Adjusted margin top for smaller screens */
+        margin-bottom: 10px;
+      }
+    }
+
+    /* Footer Style End here */
+
+
+
+
+
+
+/* why-us */
+#explore,#why-us,#trainer,#discount,#testimonial,#footer{
+  padding: 130px;
+}
