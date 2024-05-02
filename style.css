@@ -64,7 +64,9 @@ body{
 }
 
 .nav > .nav-links > a:hover {
- color: #8CEFE9;;
+ color: #8CEFE9;
+ border-bottom:1px solid #8CEFE9 ;
+ animation:;
 }
 
 .nav > #nav-check {
@@ -201,6 +203,13 @@ background-size: cover;
 
 .header::before {
   right: -200px;
+}
+
+.mr{
+  margin-right: 30px;
+}
+.ml{
+  margin-left: 30px;
 }
 
 .mb {
@@ -356,7 +365,7 @@ background-size: cover;
 
 /* Testimonial */
 #testimonial .visual img {
-  width: 90%;
+  width: 100%;
   display: block;
   margin-left: auto;
 }
@@ -370,6 +379,9 @@ background-size: cover;
   border-radius: 20px;
   position: relative;
   margin-top: 20px;
+}
+.text-set{
+ text-align: center;
 }
 
 .client img {
@@ -459,7 +471,7 @@ background-size: cover;
   }
 
   #discount .visual img {
-    width: 70%;
+    width: 100%;
     margin-bottom: 30px;
   }
 }
@@ -472,16 +484,18 @@ background-size: cover;
     display: none;
   }
 
+
   .primary {
-    font-size: 25px;
+    font-size: 2.2rem;
+    width: 100%;
   }
 
   .secondary {
-    font-size: 20px;
+    font-size: 1.7rem;
   }
 
   .tertiary {
-    font-size: 12px;
+    font-size: 1.3rem;
   }
 
   .text h1 {
@@ -628,6 +642,9 @@ background-position:center;
 #explore,#why-us,#trainer,#discount,#testimonial,#footer{
   padding: 130px;
 }
+.img-margin{
+  margin: 0 auto 0 auto;
+}
 
 /* slider css */
 
@@ -640,7 +657,7 @@ background-position:center;
 }
 .untitled {
   position: absolute;
-  height: 100%;
+  height: 116%;
   width: 100%;
   animation: rotateHue infinite 20s linear;
   animation-delay: 0.625s;
@@ -750,7 +767,7 @@ background-position:center;
 }
 .untitled__slides {
   position: absolute;
-  height: 110%;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
@@ -856,20 +873,7 @@ background-position:center;
   text-shadow: 0 0 0.5em rgba(179, 64, 26, 0.25);
   mix-blend-mode: lighten;
 }
-.slider1{
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate3d(-50%, -50%, 0);
-  color: white;
-  font-family: "Abril Fatface", sans-serif;
-  line-height: 0.8;
-  letter-spacing: -0.025em;
-  z-index: 2;
-  opacity: 1;
-  text-shadow: 0 0 0.5em rgba(179, 64, 26, 0.25);
-  mix-blend-mode: lighten;
-}
+
 .untitled__slideContent span {
   display: block;
   font-size: 10vmin;
@@ -906,3 +910,122 @@ background-position:center;
   transform: translate3d(0px, 0px, 0);
   box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.5);
 }
+
+/* pricing  css */
+.pricing-plans {
+  background-color: #141615;
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 64px;
+}
+
+.pricing-card {
+  --col: #e4e4e7;
+  position: relative;
+  min-width: 360px;
+  padding: 32px;
+  padding-bottom: 96px;
+  border-radius: 4px;
+  border: 1px solid #262626;
+  background-color: #26262620;
+  box-shadow: 0 0 32px transparent;
+  text-align: center;
+}
+
+.pricing-card.basic {
+  --col: #0891b2;
+}
+
+.pricing-card.standard {
+  --col: #059669;
+}
+
+.pricing-card.premium {
+  --col: #c026d3;
+}
+
+.pricing-card:hover {
+  border-color: var(--col);
+  background-color: #26262680;
+  box-shadow: 0 0 32px #171717;
+  transform: translateY(-16px) scale(1.02);
+  transition: all 0.5s ease;
+}
+
+.pricing-card > *:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.pricing-card .heading h4 {
+  padding-bottom: 12px;
+  color: var(--col);
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.pricing-card .heading p {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card .price {
+  position: relative;
+  color: var(--col);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing-card .price sub {
+  position: absolute;
+  bottom: 14px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card .features li {
+  padding-bottom: 16px;
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.pricing-card .features li i,
+.pricing-card .features li strong {
+  color: #e4e4e7;
+  font-size: 16px;
+  text-align: left;
+}
+
+.pricing-card .features li strong {
+  padding-left: 24px;
+}
+
+.pricing-card .cta-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--col);
+  background-color: var(--col);
+  color: #e4e4e7;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pricing-card .cta-btn:active {
+  background-color: transparent;
+  color: var(--col);
+  transition: all 0.3s ease;
+}
+
+
