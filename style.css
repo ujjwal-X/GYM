@@ -72,6 +72,8 @@ body{
 .nav > #nav-check {
   display: none;
 }
+
+
 .navbar .container {
   max-width: 1280px;
 }
@@ -1029,3 +1031,152 @@ background-position:center;
 }
 
 
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+/* Reset and Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b1321;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Styles */
+.section {
+  width: 100%;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background: #141615;
+}
+
+.primary {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.secondary {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.tertiary {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 28px;
+  background: var(--clr-primary);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #165f56;
+  transition: 0.3s linear;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  background-image: url("./image/footer-bg.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.footer-content {
+  padding: 20px 0;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+}
+
+.footer-content p {
+  max-width: 90%;
+  margin: 10px auto;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .primary {
+    font-size: 28px;
+  }
+
+  .secondary {
+    font-size: 22px;
+  }
+
+  .tertiary {
+    font-size: 14px;
+  }
+
+  .footer-content h3 {
+    font-size: 1.5rem;
+  }
+}
