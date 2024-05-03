@@ -58,8 +58,16 @@ html {
   font-family: "Poppins";
 }
 .loading-divv .countss {
+ 
   -webkit-animation: big 5s linear;
           animation: big 5s linear;
+}
+@media (max-width:750px) {
+  .loading-divv .countss{
+     font-size: 5rem !important;
+     text-align: center;
+  }
+  
 }
 
 @-webkit-keyframes big {
